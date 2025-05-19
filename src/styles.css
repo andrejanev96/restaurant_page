@@ -1,0 +1,178 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #2c3e50;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  text-align: center;
+}
+
+header button {
+  background-color: #34495e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #4a6741;
+  transform: translateY(-2px);
+}
+
+header button:active {
+  transform: translateY(0);
+}
+
+/* Main content area */
+#content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Typography */
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  color: #555;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Menu styles */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #f8f9fa;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  border-left: 4px solid #e74c3c;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e9ecef;
+  transform: translateX(5px);
+}
+
+/* Contact page styles */
+.contact-section {
+  margin-bottom: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #content {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header button {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 2px;
+  }
+}
+
+/* Animation for page transitions */
+#content > div {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Special styling for different pages */
+.home-page {
+  text-align: center;
+}
+
+.menu-page h2 {
+  color: #27ae60;
+  border-bottom-color: #27ae60;
+}
+
+.about-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-page {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+}

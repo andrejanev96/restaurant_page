@@ -1,5 +1,6 @@
 function createContactPage() {
   const contactDiv = document.createElement("div");
+  contactDiv.classList.add("contact-page");
 
   const contactHeader = document.createElement("h1");
   contactHeader.textContent = "Contact Us";

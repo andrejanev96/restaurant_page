@@ -1,5 +1,6 @@
 function createMenuPage() {
   const menuDiv = document.createElement("div");
+  menuDiv.classList.add("menu-page");
 
   const menuHeader = document.createElement("h1");
   menuHeader.textContent = "Janev's Menu";

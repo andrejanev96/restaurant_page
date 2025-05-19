@@ -3,6 +3,7 @@
 function createHomePage() {
   // Container for all home page content
   const homeDiv = document.createElement("div");
+  homeDiv.classList.add("home-page");
 
   // Creating the elements for the home page
 

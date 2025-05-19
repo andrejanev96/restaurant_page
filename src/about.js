@@ -1,5 +1,6 @@
 function createAboutPage() {
   const aboutDiv = document.createElement("div");
+  aboutDiv.classList.add("about-page");
 
   const aboutHeader = document.createElement("h1");
   aboutHeader.textContent = "About Janev's Restaurant";
